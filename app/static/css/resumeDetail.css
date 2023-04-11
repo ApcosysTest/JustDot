@@ -1,0 +1,233 @@
+/* Header name */
+.body-details h2{
+    color: #009EFF;
+    font-size: 26px;
+    padding-top: 50px;
+}
+
+/* Title and Photo Div */
+.body-details .top, .top1{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+}
+
+/* Floating label for whole page */
+.body-details .title{
+    height: 40px;
+    width: 350px;
+    border: 0.5px solid #d1d1d1;
+    margin-top: 20px;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.body-details .header{
+    position:absolute;
+    margin-top:-16px;
+    margin-left:10px;
+    color:#474747;
+    background:#fff;
+    padding:2px;
+}
+
+/* Title field */
+.body-details .top .title{
+    margin-top: 75px;
+    width: 32%;
+}
+
+.top1 .title{
+    margin-top: 75px;
+    width: 49%;
+}
+
+/* Inside title field */
+.body-details .top .radio, .top1 .radio{
+    display: flex;
+    padding: 8px 50px;
+    justify-content: space-between;
+}
+
+/* Photo field */
+.body-details .top .photo{
+    width: 140px;
+    height: 150px;
+    border: 1px solid #d1d1d1;
+    margin: auto;
+    margin-right: 0px;
+}
+
+/* Text in Photo field */
+.photo p{
+    padding: 45% 0px 0px;
+    text-align: center;
+    color: #474747;
+    font-size: 14px;
+}
+
+.name{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+}
+
+.name .title{
+    width: 32%;
+    margin-top: 50px;
+    padding: 0;
+}
+
+.about .title{
+    height: 100px;
+    width:100%
+}
+
+/* Input design for fields */
+.name input, .address input, .quali input, .quali1 input, .emp input, .emp1 input, .top1 .exp, .certif input, .ref input, .social input, .social select{
+    margin-top: 4px;
+    height: 35px;
+    outline: 0;
+    border-width: 0 0 1px;
+    border-color: #474747;
+    width: 100%;
+    padding: 0px 15px;
+}
+
+.about textarea{
+    margin-top: 8px;
+    height: 90px;
+    outline: 0;
+    border-width: 0 0 1px;
+    border-color: #474747;
+    width: 100%;
+    padding: 0px 15px;
+}
+
+.name input:focus, .address input:focus, .quali input:focus, .quali1 input:focus, .emp input:focus, .emp1 input:focus, .certif input:focus, .ref input:focus, .about textarea:focus, .social input:focus, input[type="date"]:focus, .social select:focus {
+    border-color: #009EFF;
+}
+
+/* Dob field */
+.dob, .address, .quali, .quali1, .emp, .emp1, .certif, .ref, .about, .social{
+    justify-content: space-between;
+    padding: 0 12px;
+}
+
+.about .title{
+    width: 100%;
+    margin-top: 60px;
+    padding: 0;
+}
+
+.address .title, .quali .title, .emp .title, .emp1 .title, .top1 .title, .ref .title, .social .title, .certif .title{
+    width: 49%;
+    margin-top: 60px;
+    padding: 0;
+}
+
+.dob .title{
+    width: 32%;
+    margin-top: 60px;
+    padding: 0;
+}
+
+.quali1 .title, .emp1 .temp{
+    width: 23.5%;
+    margin-top: 60px;
+    padding: 0;
+}
+
+/* Date field */
+input[type="date"], .social select{
+    color: #000000;
+    font-size: 14px;
+    width: 100%;
+    height: 35px;
+    margin-top: 4px;
+    outline: none;
+    padding: 0 15px;
+    border-width: 0 0 1px;
+    border-color: #474747;
+}
+
+/* Add education Button */
+.edu-btn{
+    padding-top: 50px;
+}
+
+.add-edu{
+    display: block !important;
+    margin: auto;
+    width: 40%;
+    padding: 0px !important;
+    border-radius: 3px !important;
+    color: #009EFF !important;
+    border-color: #009EFF !important;
+}
+
+.add-edu:hover, .add-edu:active, .add-edu:focus-visible{
+    background-color: #009EFF !important;
+    border-color: #009EFF !important;
+    color: #fff !important;
+    box-shadow: none !important;
+}
+
+.add-edu p{
+    margin-bottom: 0px !important;
+    margin-top: 7px;
+}
+
+i{
+    font-size: 25px;
+}
+
+/* placeholder */
+/* Firefox 19+ */ /* Firefox 18- */ /* IE */ /* For other Browser */
+input::-moz-placeholder, input:-moz-placeholder, input:-ms-input-placeholder, input::placeholder {
+    font-size: 14px;
+}
+
+textarea::-moz-placeholder, textarea:-moz-placeholder, textarea:-ms-input-placeholder, textarea::placeholder {
+    font-size: 14px;
+}
+
+/* Mobile View  */
+@media (max-width: 575.98px) {
+    /* Header name */
+    .body-details h2{
+        padding-top: 40px;
+        margin-bottom: 0px;
+    }
+
+    /* Title field */
+    .body-details .top .title{
+        order: 2;
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    /* Photo field */
+    .body-details .top .photo{
+        order:1;
+        margin: auto;
+        margin-top: 15px;
+    }
+
+    .name .title, .dob .title, .address .title, .quali .title, .emp .title, .emp1 .remp, .add-edu, .top1 .title, .ref .title, .social .title{
+        width: 100%;
+    }
+
+    .quali1 .title, .emp1 .temp{
+        width:47%;
+    }
+
+    /* placeholder */
+    /* Firefox 19+ */ /* Firefox 18- */ /* IE */ /* For other Browser */
+    input::-moz-placeholder, input:-moz-placeholder, input:-ms-input-placeholder, input::placeholder {
+        font-size: 12px;
+    }
+
+    textarea::-moz-placeholder, textarea:-moz-placeholder, textarea:-ms-input-placeholder, textarea::placeholder {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,786 @@
+/* Image Banner */
+.head{
+    padding: 1%;
+    padding-left: 5%;
+    font-weight: 500;
+    color: #009EFF;
+}
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/resume.png");
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+ figcaption{
+    top: -40px;
+    text-align: center;
+    color: #009EFF;
+    background-color: #FFDAD1;
+    position: calc() ;
+    padding: 1%;
+}
+ figcaption h3{
+    font-size: 28px;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    color: white;
+}
+
+.hero-text p {
+    color: white;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.hero-text .btn {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 13px 20px;
+    color: white;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 400;
+}
+
+.hero-text .btn:hover {
+    background-color: #555;
+    color: white;
+}
+
+.hero-image .sub{
+    display: flex;
+    justify-content: space-between;
+}
+
+.create h1{
+    color: #009EFF;
+    padding-top: 40px;
+    font-weight: 600;
+}
+.create p{
+    text-align: center;
+    color: #464646;
+    padding-top: 40px;
+    font-size: 22px;
+    font-weight: 600;
+}
+.tabs{
+    padding-top: 60px;
+    text-align: center;
+}
+.tabs div{
+    margin: 15px auto;
+    display: block;
+    height: 80px;
+    width: 80px;
+    border: 1px solid #FFC1B2;
+    background-color: #FFC1B2;
+    border-radius: 100%;
+}
+.tabs div img{
+    margin: 15px auto;
+    display: block;
+    height: 50px;
+    width: 40px;
+}
+.tabs p{
+    font-size: 22px;
+    padding-top: 20px;
+    font-weight: 600;
+    color: #474747;
+}
+.tabs2{
+    padding-top: 60px;
+    text-align: center;
+}
+.tabs2 div{
+    margin: 15px auto;
+    display: block;
+    height: 80px;
+    width: 80px;
+    border: 1px solid #FFC1B2;
+    background-color: #FFC1B2;
+    border-radius: 100%;
+}
+.tabs2 div img{
+    margin: 15px 0px;
+    display: block;
+    height: 50px;
+    width: 60px;
+    padding-left: 0px;
+}
+.tabs2 p{
+    font-size: 22px;
+    padding-top: 20px;
+    font-weight: 600;
+    color: #474747;
+}
+.tabs3{
+    padding-top: 60px;
+    text-align: center;
+}
+.tabs3 div{
+    margin: 15px auto;
+    display: block;
+    height: 80px;
+    width: 80px;
+    border: 1px solid #FFC1B2;
+    background-color: #FFC1B2;
+    border-radius: 100%;
+}
+.tabs3 div img{
+    margin: 15px auto;
+    display: block;
+    height: 43px;
+    width: 60px;
+}
+.tabs3 p{
+    font-size: 22px;
+    padding-top: 20px;
+    font-weight: 600;
+    color: #474747;
+}
+.cards{
+    margin: 5% 0% 10% 0%;
+}
+.card-body p{
+    width: 100%; 
+    font-size: 13px;
+    font-weight: 500;
+}
+.card-body {
+    background-color: rgba(0,0,0,.05);
+}
+.one{
+    width: 17rem;
+    border: 1px solid #02AB5C;
+}
+.two{
+    width: 17rem;
+}
+.one img{
+    height: 160px;
+    width: 165px;
+    margin-left: 20%;
+    margin-top: 10%;
+    padding: 5% 5% 5% 5%;
+}
+.two img{
+    height: 160px;
+    width: 160px;
+    margin-left: 25%;
+    margin-top: 10%;
+    padding: 5% 5% 5% 5%;
+}
+.one .row {
+    margin-left: 50%;
+    padding-left: 5%;
+    margin-right: 0;
+    padding-right: 0%;
+    color: #ffffff;
+    text-align: left;
+    font-size: 14px;
+    border-bottom-left-radius: 5px;
+    background-color:#02AB5C;
+}
+.top{
+    padding: 1%;
+    padding-left: 3%;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+}
+.top h4{
+    color: #009EFF;
+    font-size: 24px;
+    margin-top: 2%;
+}
+.upload{
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+    margin: 0;
+}
+.upload img{
+    width: 80px;
+    height: 80px;
+    margin: 30% 10% 10% 10%;
+}
+.upload p{
+    font-size: 20px;
+    color: #474747;
+}
+.upload .browse{
+    border-color: #009EFF;
+    color: #009EFF;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding: 2% 12% 2% 12%;
+    border-radius: 2px;
+}
+.upload .accept{
+    padding: 20px 0 20px 0;
+    font-size: 12px;
+}
+.upload .browse:hover{
+    border-color: #009EFF;
+    background-color: #009EFF;
+    color: #ffffff;
+}
+.uploads .drive{
+    width: 30px;
+    height: 30px;
+}
+
+.uploads  .up{
+    width: 100%;
+    margin-bottom: 15%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-color: #009EFF;
+    color: #009EFF;
+    border-radius: 2px;
+}
+.uploads  .up:hover{
+    border-color: #009EFF;
+    color: #ffffff;
+    background-color: #009EFF;
+}
+.uploads .upButtons .cancel{
+    margin-top: 100%;
+    border-color: #009EFF;
+    color: #009EFF;
+    padding: 12% 40% 12% 40%;
+    border-radius: 2px;
+}
+.uploads .upButtons .cancel:hover{
+    border-color: #009EFF;
+    color: #ffffff;
+    background-color: #009EFF;
+}
+.uploads .upButtons .upload{
+    margin-top: 100%;
+    border-color: #009EFF;
+    color: #ffffff;
+    background-color: #009EFF;
+    padding: 12% 40% 12% 40%;
+    border-radius: 2px;
+}
+.uploads .upButtons .upload:hover{
+    border-color: #009EFF;
+    background-color: #ffffff;
+    color: #009EFF;
+}
+
+/* Desktop View */
+@media (max-width: 1399.98px) {
+    .hero-text {
+        width: 400px;
+        top: 35%;
+    }
+
+    .hero-text h1{
+        font-size: 35px;
+        font-weight: 400;
+        padding-bottom: 30px;
+    }
+
+    .hero-image .sub{
+        padding-top: 530px;
+    }
+    
+    .hero-image .sub .tab{
+        font-size: 20px;
+    }
+
+    .hero-image .sub .tab p{
+        margin-top: 9px;
+        font-weight: 600;
+        padding-left: 5px;
+    }
+
+    .material-symbols-outlined {
+        font-size: 48px !important;
+    }
+
+    .create h1{
+        font-size: 30px;
+        padding-top: 60px;
+    }
+
+    .course-image img{
+        width: 267px; 
+    }
+
+    .course-text h3{
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .course-text p{
+        padding-bottom: 30px;
+        font-size: 18px;
+    }
+
+    /* course button  */
+    .course-text .btn {
+        border: 1px solid #009EFF;
+        border-radius: 2px;
+        padding: 8px 40px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .see-more button{
+        border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 13px 20px;
+    color: white;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 400;
+    }
+
+    .see-more .material-symbols-outlined{
+        color: #009EFF;
+        font-size: 60px !important;
+    }
+    
+    .see-more p{
+        padding-top: 5px;
+        font-size: 18px;
+        font-weight: 700;
+        color: #474747;
+    }
+
+    .b-instructor{
+        padding-bottom: 60px;
+    }
+
+    .instructor {
+        height: 260px;
+    }
+
+    .instructor-text h3{
+        padding-top: 180px;
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+    .b-instructor p{
+        margin: 0 250px 0 250px;
+        text-align: center;
+        padding-top: 40px;
+        font-size: 22px;
+        font-weight: 300;
+        padding-bottom: 30px;
+    }
+
+    .p-instructor .btn{
+        padding: 8px 40px;
+        font-size: 16px;
+    }
+
+    .invester {
+        height: 260px;
+    }
+
+    .invester-text h3{
+        padding-top: 180px;
+        font-size: 30px;
+    }
+
+    .invester-text ion-icon{
+        padding-top: 178px;
+        font-size: 40px;
+        padding-left: 10px;
+    }
+
+    .top-subscribe{
+        padding-top: 60px;
+    }
+
+    .subscribe{
+        height: 300px;
+    }
+
+    .subscribe-image{
+        width: 50%;
+        padding-top: 60px;
+    }
+
+    .subscribe-image img{
+        width: 275px; 
+        align-content: center;
+    }
+
+    .subscribe-text{
+        padding-top: 120px;
+    }
+
+    .subscribe-text h3{
+        font-size: 22px;
+    }
+
+    .subscribe-text .get-app{
+        padding-top: 20px;
+    }
+
+    .subscribe-text .btn{
+        padding: 2px;
+    }
+    
+    .subscribe-text .btn {
+        padding: 6px 30px;
+        border-radius: 2px;
+    }
+}
+
+/* Laptop View  */
+@media (max-width: 1199.98px) {
+    .hero-text {
+        width: 400px;
+        top: 35%;
+    }
+
+    .hero-image .sub{
+        padding-top: 530px;
+    }
+    
+    .hero-image .sub .tab{
+        font-size: 18px;
+    }
+
+    .hero-image .sub .tab p{
+        margin-top: 8px;
+        padding-left: 5px;
+    }
+
+    .material-symbols-outlined {
+        font-size: 40px !important;
+    }
+
+    .courses h1{
+        font-size: 30px;
+        padding-top: 60px;
+    }
+
+    .courses .even, .courses .odd{
+        padding-top: 60px;
+    }
+
+    .course-image img{
+        width: 267px; 
+    }
+
+    .course-text h3{
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .course-text p{
+        padding-bottom: 3px;
+        font-size: 18px;
+    }
+
+    /* course button  */
+    .course-text .btn {
+        border: 1px solid #009EFF;
+        border-radius: 2px;
+        padding: 8px 40px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .see-more{
+        padding-top: 30px;
+    }
+    
+    .see-more p{
+        padding-top: 5px;
+        font-size: 18px;
+        font-weight: 700;
+        color: #474747;
+    }
+
+    .b-instructor{
+        padding-bottom: 60px;
+    }
+
+    .instructor {
+        height: 260px;
+    }
+
+    .instructor-text h3{
+        padding-top: 180px;
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+    .b-instructor p{
+        margin: 0 200px 0 200px;
+        text-align: center;
+        padding-top: 40px;
+        font-size: 22px;
+        font-weight: 300;
+        padding-bottom: 30px;
+    }
+
+    .p-instructor .btn{
+        padding: 8px 40px;
+        font-size: 16px;
+    }
+
+    .invester {
+        height: 260px;
+    }
+
+    .invester-text h3{
+        padding-top: 180px;
+        font-size: 30px;
+    }
+
+    .invester-text ion-icon{
+        padding-top: 178px;
+        font-size: 40px;
+        padding-left: 8px;
+    }
+
+    .top-subscribe{
+        padding-top: 60px;
+    }
+
+    .subscribe{
+        height: 300px;
+    }
+
+    .subscribe-image{
+        width: 50%;
+        padding-top: 60px;
+    }
+
+    .subscribe-image img{
+        width: 275px; 
+        align-content: center;
+    }
+
+    .subscribe-text{
+        padding-top: 120px;
+    }
+
+    .subscribe-text h3{
+        font-size: 22px;
+    }
+
+    .subscribe-text .btn {
+        padding: 6px 30px;
+        border-radius: 2px;
+    }
+}
+
+/* Tablet View  */
+@media (max-width: 991.98px) {
+    .hero-text {
+        width: 400px;
+        top: 35%;
+    }
+
+    .hero-text h1{
+        font-size: 35px;
+        font-weight: 400;
+        padding-bottom: 30px;
+    }
+
+    .hero-image .sub{
+        padding-top: 530px;
+    }
+    
+    .hero-image .sub .tab{
+        font-size: 18px;
+    }
+
+    .hero-image .sub .tab p{
+        margin-top: 8px;
+        padding-left: 3px;
+    }
+
+    .material-symbols-outlined {
+        font-size: 40px !important;
+    }
+
+    .courses h1{
+        font-size: 30px;
+        padding-top: 60px;
+    }
+
+    .courses .even, .courses .odd{
+        padding-top: 24px;
+    }
+
+    .course-image img{
+        width: 267px;
+        border-radius: 40px 0px 0px 0px; 
+    }
+
+    .course-text h3{
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+}
+
+/* Mobile View  */
+@media (max-width: 376px) {
+    .hero-image{
+        height: 272px;
+    }
+
+    .one{
+        width: 12rem;
+        border: 1px solid #02AB5C;
+    }
+    .two{
+        width: 12rem;
+    }
+    .one img{
+        height: 110px;
+        width: 110px;
+        margin-left: 20%;
+        margin-top: 10%;
+        padding: 5% 5% 5% 5%;
+    }
+    .two img{
+        height: 110px;
+        width: 110px;
+        margin-left: 25%;
+        margin-top: 10%;
+        padding: 5% 5% 5% 5%;
+    }
+    .one .row {
+        margin-left: 50%;
+        padding-left: 5%;
+        margin-right: 0;
+        padding-right: 0%;
+        color: #ffffff;
+        text-align: left;
+        font-size: 14px;
+        border-bottom-left-radius: 5px;
+        background-color:#02AB5C;
+    }
+.uploads  .up{
+    margin-bottom: 15%;
+    padding-bottom: 2%;
+    border-color: #009EFF;
+    color: #009EFF;
+    border-radius: 2px;
+}
+.uploads .upButtons .cancel{
+    margin: 0;
+    padding: 5% 40% 5% 40%;
+}
+.uploads .upButtons .upload{
+    margin: 0%;
+    margin-top: 5%;
+    padding: 5% 40% 5% 40%;
+}
+    .hero-text {
+        width: 192px;
+        top: 84px;
+        border-bottom-right-radius: 30px;
+    }
+
+    .hero-text h1{
+        font-size: 18px;
+        padding-bottom: 14px;
+        line-height: 24px;
+    }
+
+    .hero-text .btn{
+        padding: 6px 30px;
+        font-size: 12px;
+        border-radius: 2px;
+    }
+
+    .hero-image .sub{
+        padding-top: 230px;
+    }
+    
+    .hero-image .sub .tab{
+        font-size: 9px;
+    }
+
+    .hero-image .sub .tab p{
+        margin-top: 5px;
+        padding-left: 3px;
+    }
+
+    .material-symbols-outlined {
+        font-size: 21px !important;
+    }
+
+    .courses h1{
+        font-size: 16px;
+        text-align: left;
+        font-weight: 600;
+    }
+
+    .courses .even, .courses .odd{
+        padding-top: 20px;
+    }
+
+    .courses{
+        margin-top: 0;
+        padding-bottom: 5px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .courses .even .course-text{
+        order: 2;
+    }
+
+    .courses .even .course-image{
+        order: 1;
+    }
+
+    .course-text h3{
+        font-size: 14px;
+        padding-top: 10px;
+        font-weight: 600;
+    }
+
+    .course-text p{
+        font-size: 12px;
+        line-height: 18px;
+        padding-bottom: 8px;
+    }
+
+    .course-image img{
+        width: 267px; 
+        height: 236px;
+        object-fit: cover;
+    }
+}
+
+.course-text .default {
+    border-color: #009EFF;
+    color: #009EFF;
+}
+  
+.course-text .default:hover {
+    background: #009EFF;
+    color: white;
+}
+
+.see-more{
+    justify-items: center;
+    vertical-align:middle; 
+    text-align:center
+}

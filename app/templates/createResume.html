@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+{% block head %}
+
+{% load static %}
+<link href="{% static 'css\createResume.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+
+    <h2 class="head">Create Resume</h2>
+    <!-- Image banner -->
+    <div class="hero-image"></div>
+    <figcaption><h3>Create Your Resume With Following Steps</h3></figcaption>
+    
+    <!-- Create my Resume -->
+    <div class="container">
+        <div class="create">
+            <h1>How it Works?</h1>
+            <p>A Resume Jusdots Easiest way to Build  <br>a Professional Resume</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 tabs">
+                <div><img src="{% static 'img/Group 1188.png' %}" alt="Fill the Form"></div>
+                    <p>1. Fill the Form</p>
+                </div>
+                <div class="col-md-4 tabs2">
+                    <div><img src="{% static 'img/Group 1192.png' %}" alt="Choose Template"></div>
+                    <p>2. Choose template</p>
+                </div>
+                <div class="col-md-4 tabs3">
+                    <div><img src="{% static 'img/Group 1194.png' %}" alt="Choose Template"></div>
+                    <p>3. Preview & Download</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row " style="padding-top: 10%; padding-left:15%;">
+            <div class="col-md-6 cards" style="text-align: center;">
+                <a href="#UploadModal" style="text-decoration:none" data-bs-toggle="modal" data-bs-target="#uploadModal">
+                    <div class="card border-success one"> 
+                        <div class="row ">
+                            Recommended 
+                        </div>
+                        <img src="{% static 'img/Group 1200.png' %}" alt="">
+                        <div class="card-body">
+                          <p class="card-text">Upload Your Resume Will Move Everything to Your New Resume</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- The Contact Modal -->
+                <div class="modal fade" id="uploadModal" tabindex="-1" role="dialog" aria-labelledby="uploadModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg  modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="row top">
+                                <h4>Upload Your Resume</h4>
+                            </div>
+                            <a class="close" data-dismiss="modal" aria-label="Close"><ion-icon name="close-outline"></ion-icon></a>
+                            <div class="container body-modal " style="padding: 5%;">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div  id="dropZone" class="container upload">
+                                            <img src="{% static 'img/upload.png' %}" alt="">
+                                            <p>Drag & Drop Your File Here</p>
+                                            <input id="fileUp" type="file"  style="display: none;">
+                                            <a id="upload_link" href="javascript:void(0)" type="button" class="btn browse">Browse From Your Computer</a>
+                                        <p class="accept">Acceptable File Types<br>(Doc, Pdf, Html, Txt)</p>
+                                        </div></div>
+                                        <div class="col-md-6">
+                                            <div   class="container uploads">
+                                            <a href="" type="button" class="btn up"><span><img class="drive" src="{% static 'img/dropbox.png' %}" alt="DropboxLogo">&nbsp;&nbsp; Upload From Dropbox</span></a>
+                                            <a href="" type="button" class="btn up"><span><img  class="drive" src="{% static 'img/drive.png' %}" alt="DriveLogo">&nbsp;&nbsp;Upload From Google Drive</span></a>
+                                            <div class="row upButtons">
+                                                <div class="col-md-5">
+                                                    <a class="btn cancel" data-dismiss="modal" >Cancel</a>
+                                                </div>
+                                                <div class="col-md-2"></div>
+                                                <div class="col-md-5">
+                                                    <a href="" type="button" class="btn upload">Upload</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 cards"style="text-align: center;">
+                <a href="{% url 'resumeDetail' %}" style="text-decoration: none; color:#000000">
+                    <div class="card two">
+                        <div class="row ">&nbsp;
+                        </div>
+                        <img src="{% static 'img/Group 1201.png' %}" alt="">
+                        <div class="card-body">
+                          <p class="card-text">Create a New Resume Will Guide You Through Each Resume Section</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+   
+    
+    <script src="{% static 'fileupload/js/dropzone.js' %}"></script>
+    <script>
+        $("#upload_link").click(function(){
+       $("#fileUp").trigger('click');
+        });
+    </script>
+
+
+{% endblock %}

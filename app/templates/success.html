@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block head %}
+
+{% load static %}
+<link href="{% static 'css\register.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block login %}
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="card mx-auto " style="width: 50%; justify-content: center; margin-top: 5%;box-shadow: 0 0 10px #333;"> 
+    <center>
+     <div class="card-body">
+        <h4 class="card-title">Your Password has been reset successfully </h4>
+        <p class="card-text" style="text-align: center;">Now, you can Login with new password</p>
+        <a href="/login" class="btn" style="background-color:#FF6500;color:white;">Go to Login</a>
+    </div>
+ </center>
+</div>
+
+
+{% endblock %}

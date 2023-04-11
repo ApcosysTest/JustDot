@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% block head %}
+
+{% load static %}
+<link href="{% static 'css/index.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+
+    <!-- Image banner -->
+    <div class="hero-image">
+        <div class="row">
+            <div class="col-md-6"></div>
+            <div class="col-md-6" style=" padding-left:10%">
+                <div class="container">
+                    <div class="hero-text">
+                        <p>Free Online Resume Maker</p>
+                        <button class="btn" style="background-color: #009EFF;">Build My Resume</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 tabs">
+                <div><img src="{% static 'img\Group 1298.png' %}" alt="Easy to Create"></div>
+                <p>Easy to Create</p>
+            </div>
+            <div class="col-md-4 tabs2">
+                <div><img src="{% static 'img\Group 1299.png' %}" alt="Easy to Customize"></div>
+                <p>Easy to Customize</p>
+            </div>
+            <div class="col-md-4 tabs3">
+                <div><img src="{% static 'img\Group 1297.png' %}" alt="More Than 100 Templates"></div>
+                <p>More Than 100 Templates</p>
+            </div>
+        </div>
+    </div>
+    <!-- Create my Resume -->
+    <div class="container">
+        <div class="create">
+            <h1>Resume For All Professions</h1>
+            <p>Now, You Don't Need to Spend Hours & Hours Just to Built a Resume. Jusdots Has Made it So Easy That You Can Make a Professional Resume Just in Few Minute With Three Steps.</p>
+            <a href="/createResume" class="btn" style="background-color: #009EFF; color:#ffffff">Create My Resume</a>
+        </div>
+    </div>
+
+    <!-- Benifits -->
+    <div class="container">
+        <div class="create">
+            <h1>Benefits of jusdots Resume Builder</h1>
+            <p>
+                <ul style="list-style: none;">
+                    <li>Create a Professional Resume For Every Industry</li>
+                    <li>Present All Yours Skill In a Professional Way</li>
+                    <li>Save & Edit as Many Time You Want</li>
+                    <li>Download For Free</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+    
+    <!-- footer  -->
+    {% endblock %}

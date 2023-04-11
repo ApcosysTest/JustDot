@@ -1,0 +1,298 @@
+{% extends "base.html" %}
+{% block head %}
+<!-- CSS only -->
+{% load static %}
+    <link rel="stylesheet" href="{% static 'css/resumeDetail.css' %}">
+{% endblock %}
+
+{% block content %}
+
+    <div class="container body-details">
+        <h2>Personal Information</h2>
+        <div class="top row">
+            <div class="title col-lg-6 col-sm-12">
+                <div class="header">Title</div>
+                <div class="radio">
+                    <div class="radio-op">
+                        <label for="Mr">Mr</label>
+                        <input type="radio" id="Mr" name="title" value="Mr">
+                    </div>
+                    <div class="radio-op">
+                        <label for="Ms">Ms</label> 
+                        <input type="radio" id="Ms" name="title" value="Ms">
+                    </div>
+                    <div class="radio-op">
+                        <label for="Dr">Dr</label>
+                        <input type="radio" id="Dr" name="title" value="Dr">
+                    </div>
+                </div>
+            </div>
+            <div class="photo col-lg-6 col-sm-12"><p>Upload Your Photo</p></div>
+        </div>
+
+        <div class="name row">
+            <div class="title col-lg-4 col-sm-12">
+                <div class="header">First Name</div>
+                <input type="text" placeholder="E.g. Shruti">
+            </div>
+            <div class="title col-lg-4 col-sm-12">
+                <div class="header">Middle Name</div>
+                <input type="text" placeholder="E.g. Ramesh">
+            </div>
+            <div class="title col-lg-4 col-sm-12">
+                <div class="header">Last Name</div>
+                <input type="text" placeholder="E.g. Tendulkar">
+            </div>
+        </div>
+        <div class="dob row">
+            <div class="title col-lg-4 col-sm-12">
+                <div class="header">DOB</div>
+                <input type="date">
+            </div>
+        </div>
+        <div class="address row">
+            <div class="title col-lg-6 col-sm-12">
+                <div class="header">Address(Street, Landmark, Area)</div>
+                <input type="text" placeholder="E.g. 708, Barton Center">
+            </div>
+            <div class="title col-lg-6 col-sm-12">
+                <div class="header">City</div>
+                <input type="text" placeholder="E.g. Bengaluru">
+            </div>
+        </div>
+        <div class="address row">
+            <div class="title col-lg-6 col-sm-12">
+                <div class="header">State</div>
+                <input type="text" placeholder="E.g. Karnataka">
+            </div>
+            <div class="title col-lg-6 col-sm-12">
+                <div class="header">Pin/Zip Code</div>
+                <input type="text" placeholder="E.g. 560001">
+            </div>
+        </div>
+        <div class="address row">
+            <div class="title col-lg-6 col-sm-12">
+                <div class="header">Mobile Number</div>
+                <input type="text" placeholder="E.g. 9135200117">
+            </div>
+            <div class="title col-lg-6 col-sm-12">
+                <div class="header">Mail ID</div>
+                <input type="text" placeholder="E.g. shruti94@gmail.com">
+            </div>
+        </div>
+        <h2>Education</h2>
+        <div class="quali row">
+            <div class="title col-lg-6 col-sm-12">
+                <div class="header">Qualification</div>
+                <input type="text" placeholder="Eg. Bachelor's in Computer Application">
+            </div>
+            <div class="title col-lg-6 col-sm-12">
+                <div class="header">Name of Institute/College/School</div>
+                <input type="text" placeholder="E.g. St.Joseph College">
+            </div>
+        </div>
+        <div class="quali row">
+            <div class="title col-lg-6 col-sm-12">
+                <div class="header">Board/University</div>
+                <input type="text" placeholder="Eg. Kerala University">
+            </div>
+            <div class="title col-lg-6 col-sm-12">
+                <div class="header">State</div>
+                <input type="text" placeholder="Eg. Kerala">
+            </div>
+        </div>
+        <div class="quali1 row">
+            <div class="title col-lg-3 col-sm-6">
+                <div class="header">Start on</div>
+                <input type="text" placeholder="Eg. June 2019">
+            </div>
+            <div class="title col-lg-3 col-sm-6">
+                <div class="header">End on</div>
+                <input type="text" placeholder="Eg. April 2022">
+            </div>
+            <div class="title col-lg-3 col-sm-6">
+                <div class="header">Percentage/CGP</div>
+                <input type="text" placeholder="Eg. 72.6">
+            </div>
+            <div class="title col-lg-3 col-sm-6">
+                <div class="header">Grade</div>
+                <input type="text" placeholder="Eg. B">
+            </div>
+        </div>
+        <div class="edu-btn">
+            <a type="button" class="btn btn-outline-primary add-edu">
+                <div style="display: flex; justify-content: center;">
+                    <i class="bi bi-plus"></i>
+                    <p>Add More Education Details</p>
+                </div>
+            </a>
+        </div>
+
+        <h2>Employment History</h2>
+        <div class="top1 row">
+            <div class="title col-lg-6 col-sm-12">
+                <div class="header">Fresher</div>
+                <div class="radio">
+                    <div class="radio-op">
+                        <label for="Yes">Yes</label>
+                        <input type="radio" id="Mr" name="title" value="Mr">
+                    </div>
+                    <div class="radio-op">
+                        <label for="No">No</label> 
+                        <input type="radio" id="Ms" name="title" value="Ms">
+                    </div>
+                </div>
+            </div>
+            <div class="title col-lg-6 col-sm-12">
+                <div class="header">Total Work Experience</div>
+                <input type="text" class="exp" placeholder="E.g. 5">
+            </div>
+        </div>
+        <div class="emp row">
+            <div class="title col-lg-6 col-sm-12">
+                <div class="header">Company Name</div>
+                <input type="text" placeholder="Eg. Apcosys Pvt Ltd">
+            </div>
+            <div class="title col-lg-6 col-sm-12">
+                <div class="header">Position</div>
+                <input type="text" placeholder="E.g. Jr. Software Developer">
+            </div>
+        </div>
+        <div class="emp1 row">
+            <div class="title remp col-lg-6 col-sm-12">
+                <div class="header">Responsibilities</div>
+                <input type="text" placeholder="E.g. Software Develop, Flowchart">
+            </div>
+            <div class="title temp col-lg-3 col-sm-6">
+                <div class="header">Start on</div>
+                <input type="text" placeholder="Eg. June 2019">
+            </div>
+            <div class="title temp col-lg-3 col-sm-6">
+                <div class="header">End on</div>
+                <input type="text" placeholder="Eg. April 2022">
+            </div>
+        </div>
+        <div class="edu-btn">
+            <a type="button" class="btn btn-outline-primary add-edu">
+                <div style="display: flex; justify-content: center;">
+                    <i class="bi bi-plus"></i>
+                    <p>Add More Employment Details</p>
+                </div>
+            </a>
+        </div>
+
+        <h2>Skills and Qualifications</h2>
+        <div class="certif row">
+            <div class="title col-lg-12 col-sm-12">
+                <div class="header">Certification\Training</div>
+                <input type="text" placeholder="Eg. Python Basics and ADvance in Data Science">
+            </div>
+            <div class="title col-lg-12 col-sm-12">
+                <div class="header">Provide by</div>
+                <input type="text" placeholder="Eg. Kaggle">
+            </div>
+        </div>
+        <div class="edu-btn">
+            <a type="button" class="btn btn-outline-primary add-edu">
+                <div style="display: flex; justify-content: center;">
+                    <i class="bi bi-plus"></i>
+                    <p>Add More Certification\Training</p>
+                </div>
+            </a>
+        </div>
+        <div class="certif row">
+            <div class="title col-lg-12 col-sm-12">
+                <div class="header">Licenses\Awards</div>
+                <input type="text" placeholder="Eg. First place in Hackathon">
+            </div>
+            <div class="title col-lg-12 col-sm-12">
+                <div class="header">Provide by</div>
+                <input type="text" placeholder="Eg. Kerala University">
+            </div>
+        </div>
+        <div class="edu-btn">
+            <a type="button" class="btn btn-outline-primary add-edu">
+                <div style="display: flex; justify-content: center;">
+                    <i class="bi bi-plus"></i>
+                    <p>Add More Licenses\Awards</p>
+                </div>
+            </a>
+        </div>
+
+        <h2>References</h2>
+        <div class="ref row">
+            <div class="title col-lg-6 col-sm-12">
+                <div class="header">Name</div>
+                <input type="text" placeholder="E.g. Jesin">
+            </div>
+            <div class="title col-lg-6 col-sm-12">
+                <div class="header">Mobile Number</div>
+                <input type="text" placeholder="E.g. 6666666666">
+            </div>
+        </div>
+        <div class="ref row">
+            <div class="title col-lg-6 col-sm-12">
+                <div class="header">Address</div>
+                <input type="text" placeholder="E.g. 19A Perry Cross Street,Mumbai">
+            </div>
+            <div class="title col-lg-6 col-sm-12">
+                <div class="header">Pin/Zip Code</div>
+                <input type="text" placeholder="E.g. 400050">
+            </div>
+        </div>
+
+        <h2>Profile Summary</h2>
+        <div class="about row">
+            <div class="title col-lg-6 col-sm-12">
+                <div class="header">About</div>
+                <textarea placeholder="E.g. I am a self-taught developer who loves to solve problems digitally with top notch technologies. I am specialized in web technologies. I am working to learn new technologies and seize new opportunities as well as develop creative ideas."></textarea>
+            </div>
+        </div>
+
+        <h2>Social Media</h2>
+        <div class="social row">
+            <div class="title col-lg-6 col-sm-12">
+                <div class="header">Name</div>
+                <input type="text" placeholder="E.g. LinkedIn">
+            </div>
+            <div class="title col-lg-6 col-sm-12">
+                <div class="header">Link</div>
+                <input type="text" placeholder="E.g. https://LinkedIn/rahul">
+            </div>
+        </div>
+        <div class="edu-btn">
+            <a type="button" class="btn btn-outline-primary add-edu">
+                <div style="display: flex; justify-content: center;">
+                    <i class="bi bi-plus"></i>
+                    <p>Add More Social Media Link</p>
+                </div>
+            </a>
+        </div>
+
+        <h2>Language</h2>
+        <div class="social row">
+            <div class="title col-lg-6 col-sm-12">
+                <div class="header">language</div>
+                <input type="text" placeholder="E.g. Tamil">
+            </div>
+            <div class="title col-lg-6 col-sm-12">
+                <div class="header">Level</div>
+                <select name="level" id="level">
+                    <option value="Basic">Basic</option>
+                    <option value="Conversational">Conversational</option>
+                    <option value="Fluent">Fluent</option>
+                    <option value="Proficient">Proficient</option>
+                </select>
+            </div>
+        </div>
+        <div class="edu-btn">
+            <a type="button" class="btn btn-outline-primary add-edu">
+                <div style="display: flex; justify-content: center;">
+                    <i class="bi bi-plus"></i>
+                    <p>Add More Language</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    
+{% endblock %}
