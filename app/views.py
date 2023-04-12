@@ -37,11 +37,10 @@ def login_view(request):
             password = form.cleaned_data["password"]
             print(username, password)
             user = authenticate(request, username=username, password=password)
-            if user is not None:
-                login(request, user) 
-            else:
-                print(user)
+            login(request, user)
             return redirect("index")
+        else:
+            messages.error(request, "Please Correct Below Errors")
     else:
         form = LoginForm()
     context['login_form'] = form
@@ -51,6 +50,13 @@ def login_view(request):
 def logout_view(request):
     logout(request)
     return redirect("index")
+
+# Resume Detail
+def resumeDetail(request):
+    if request.user is not None:
+        p_form = PersonalForm()
+    context = {'p_form':p_form}
+    return render(request, 'resumeDetail.html', context)
 
 # Create Resume Page
 def createResume(request):
@@ -63,6 +69,3 @@ def RegisterConfirm(request):
 # Forget Password page
 def forgotPassword(request):
     return render(request, 'forgotPassword.html')
-
-def resumeDetail(request):
-    return render(request, 'resumeDetail.html')

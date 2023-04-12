@@ -12,20 +12,7 @@
         <div class="top row">
             <div class="title col-lg-6 col-sm-12">
                 <div class="header">Title</div>
-                <div class="radio">
-                    <div class="radio-op">
-                        <label for="Mr">Mr</label>
-                        <input type="radio" id="Mr" name="title" value="Mr" >
-                    </div>
-                    <div class="radio-op">
-                        <label for="Ms">Ms</label> 
-                        <input type="radio" id="Ms" name="title" value="Ms">
-                    </div>
-                    <div class="radio-op">
-                        <label for="Dr">Dr</label>
-                        <input type="radio" id="Dr" name="title" value="Dr">
-                    </div>
-                </div>
+                {{p_form.title}}
             </div>
             <div class="photo col-lg-6 col-sm-12"><p>Upload Your Photo</p></div>
         </div>
@@ -33,51 +20,51 @@
         <div class="name row">
             <div class="title col-lg-4 col-sm-12">
                 <div class="header">First Name</div>
-                <input type="text" placeholder="E.g. Shruti">
+                {{p_form.first_name}}
             </div>
             <div class="title col-lg-4 col-sm-12">
                 <div class="header">Middle Name</div>
-                <input type="text" placeholder="E.g. Ramesh">
+                {{p_form.middle_name}}
             </div>
             <div class="title col-lg-4 col-sm-12">
                 <div class="header">Last Name</div>
-                <input type="text" placeholder="E.g. Tendulkar">
+                {{p_form.last_name}}
             </div>
         </div>
         <div class="dob row">
             <div class="title col-lg-4 col-sm-12">
                 <div class="header">DOB</div>
-                <input type="date">
+                {{p_form.dob}}
             </div>
         </div>
         <div class="address row">
             <div class="title col-lg-6 col-sm-12">
                 <div class="header">Address(Street, Landmark, Area)</div>
-                <input type="text" placeholder="E.g. 708, Barton Center">
+                {{p_form.address}}
             </div>
             <div class="title col-lg-6 col-sm-12">
                 <div class="header">City</div>
-                <input type="text" placeholder="E.g. Bengaluru">
+                {{p_form.city}}
             </div>
         </div>
         <div class="address row">
             <div class="title col-lg-6 col-sm-12">
                 <div class="header">State</div>
-                <input type="text" placeholder="E.g. Karnataka">
+                {{p_form.state}}
             </div>
             <div class="title col-lg-6 col-sm-12">
                 <div class="header">Pin/Zip Code</div>
-                <input type="text" placeholder="E.g. 560001">
+                {{p_form.pincode}}
             </div>
         </div>
         <div class="address row">
             <div class="title col-lg-6 col-sm-12">
                 <div class="header">Mobile Number</div>
-                <input type="text" placeholder="E.g. 9135200117">
+                {{p_form.mobile_number}}
             </div>
             <div class="title col-lg-6 col-sm-12">
                 <div class="header">Mail ID</div>
-                <input type="text" placeholder="E.g. shruti94@gmail.com">
+                {{p_form.email}}
             </div>
         </div>
         <h2>Education</h2>
@@ -245,7 +232,7 @@
         <div class="about row">
             <div class="title col-lg-6 col-sm-12">
                 <div class="header">About</div>
-                <textarea placeholder="E.g. I am a self-taught developer who loves to solve problems digitally with top notch technologies. I am specialized in web technologies. I am working to learn new technologies and seize new opportunities as well as develop creative ideas."></textarea>
+                {{p_form.about}}
             </div>
         </div>
 

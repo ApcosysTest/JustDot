@@ -42,7 +42,7 @@
 }
 
 /* Inside title field */
-.body-details .top .radio, .top1 .radio{
+.body-details .top #id_title, .top1 .radio{
     display: flex;
     padding: 8px 50px;
     justify-content: space-between;

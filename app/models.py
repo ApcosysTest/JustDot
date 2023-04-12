@@ -7,6 +7,7 @@ class CustomUser(AbstractUser):
     email = models.EmailField(_('email address'), unique=True)
 
 class Personal(models.Model):
+    user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, null=True)
     title = models.CharField(max_length=20)
     first_name = models.CharField(max_length=50)
     middle_name = models.CharField(max_length=50)
@@ -16,13 +17,13 @@ class Personal(models.Model):
     address = models.CharField(max_length=100)
     city = models.CharField(max_length=50)
     state = models.CharField(max_length=50)
-    pincode = models.CharField(max_length=50)
-    mobile_number = models.CharField(max_length=50, unique=True)
-    email = models.EmailField(max_length=50, unique=True)
+    pincode = models.IntegerField()
+    mobile_number = models.IntegerField()
+    email = models.EmailField(max_length=50)
     about = models.CharField(max_length=800)
 
 class Education(models.Model):
-    pid = models.OneToOneField(Personal, on_delete=models.CASCADE)
+    pid = models.ForeignKey(Personal, on_delete=models.CASCADE)
     qualification = models.CharField(max_length=100)
     institute = models.CharField(max_length=100)
     board = models.CharField(max_length=100)
@@ -33,7 +34,7 @@ class Education(models.Model):
     grade = models.CharField(max_length=10)
 
 class Employment(models.Model):
-    pid = models.OneToOneField(Personal, on_delete=models.CASCADE)
+    pid = models.ForeignKey(Personal, on_delete=models.CASCADE)
     fresher = models.CharField(max_length=10)
     work_exp = models.CharField(max_length=10)
     company_name = models.CharField(max_length=80)
@@ -43,12 +44,12 @@ class Employment(models.Model):
     end_on = models.CharField(max_length=100)
 
 class Skill(models.Model):
-    pid = models.OneToOneField(Personal, on_delete=models.CASCADE)
+    pid = models.ForeignKey(Personal, on_delete=models.CASCADE)
     certificate = models.CharField(max_length=100)
     provide_by = models.CharField(max_length=100)
 
 class Licence(models.Model):
-    pid = models.OneToOneField(Personal, on_delete=models.CASCADE)
+    pid = models.ForeignKey(Personal, on_delete=models.CASCADE)
     license = models.CharField(max_length=100)
     provide_by = models.CharField(max_length=100)
 
@@ -60,11 +61,11 @@ class Reference(models.Model):
     pincode = models.CharField(max_length=50)
 
 class Social(models.Model):
-    pid = models.OneToOneField(Personal, on_delete=models.CASCADE)
+    pid = models.ForeignKey(Personal, on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
     link = models.CharField(max_length=100)
 
 class Language(models.Model):
-    pid = models.OneToOneField(Personal, on_delete=models.CASCADE)
+    pid = models.ForeignKey(Personal, on_delete=models.CASCADE)
     Language = models.CharField(max_length=100)
     level = models.CharField(max_length=100)
