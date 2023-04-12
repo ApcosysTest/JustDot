@@ -61,19 +61,16 @@
 }
 
 .create h1{
-    color: #009EFF;
-    padding-top: 40px;
+    color: #009EFF; 
     font-weight: 600;
 }
 .create p{
     text-align: center;
-    color: #464646;
-    padding-top: 40px;
-    font-size: 22px;
-    font-weight: 600;
+    color: #464646; 
+    font-size: 20px;
+    font-weight: 500;
 }
-.tabs{
-    padding-top: 60px;
+.tabs{ 
     text-align: center;
 }
 .tabs div{
@@ -92,13 +89,10 @@
     width: 40px;
 }
 .tabs p{
-    font-size: 22px;
-    padding-top: 20px;
     font-weight: 600;
     color: #474747;
 }
-.tabs2{
-    padding-top: 60px;
+.tabs2{ 
     text-align: center;
 }
 .tabs2 div{
@@ -118,13 +112,10 @@
     padding-left: 0px;
 }
 .tabs2 p{
-    font-size: 22px;
-    padding-top: 20px;
     font-weight: 600;
     color: #474747;
 }
-.tabs3{
-    padding-top: 60px;
+.tabs3{ 
     text-align: center;
 }
 .tabs3 div{
@@ -143,13 +134,11 @@
     width: 60px;
 }
 .tabs3 p{
-    font-size: 22px;
-    padding-top: 20px;
     font-weight: 600;
     color: #474747;
 }
 .cards{
-    margin: 5% 0% 10% 0%;
+    margin: 2% 0% 10% 0%;
 }
 .card-body p{
     width: 100%; 
@@ -169,15 +158,13 @@
 .one img{
     height: 160px;
     width: 165px;
-    margin-left: 20%;
-    margin-top: 10%;
+    margin-left: 20%;  
     padding: 5% 5% 5% 5%;
 }
 .two img{
     height: 160px;
     width: 160px;
-    margin-left: 25%;
-    margin-top: 10%;
+    margin-left: 25%; 
     padding: 5% 5% 5% 5%;
 }
 .one .row {
@@ -308,8 +295,7 @@
     }
 
     .create h1{
-        font-size: 30px;
-        padding-top: 60px;
+        font-size: 30px; 
     }
 
     .course-image img{

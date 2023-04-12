@@ -7,6 +7,12 @@
     background-size: cover;
     position: relative;
 }
+.hero-image .figCap{ 
+    position: relative;
+    top: 74%;
+    width: 100.8%;
+    background-color: rgba(0,0,0,0.5);
+}
 
 .hero-text {
     text-align: center;
@@ -16,7 +22,7 @@
 
 .hero-text p {
     color: white;
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 800;
 }
 
@@ -24,15 +30,17 @@
     border: none;
     outline: 0;
     display: inline-block;
-    padding: 13px 20px;
+    padding: 13px 20px; 
     color: white;
     background-color: #ddd;
     text-align: center;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 33px;
     font-weight: 400;
 }
-
+.hero-text .imgtext{
+    font-size: 18px;
+}
 .hero-text .btn:hover {
     background-color: #555;
     color: white;
@@ -42,31 +50,24 @@
     display: flex;
     justify-content: space-between;
 }
-
+.col-md-3{
+    padding: 2%;
+}
 .create h1{
     color: #009EFF;
+    font-size: 22PX;
     padding-top: 40px;
     font-weight: 600;
 }
 .create p{
-    color: #464646;
-    padding-top: 40px;
+    color: #464646; 
     font-size: 30px;
     font-weight: 500;
 }
-.tabs{
-    padding-top: 60px;
+.tabs{ 
     text-align: center;
 }
-.tabs div{
-    margin: 15px auto;
-    display: block;
-    height: 120px;
-    width: 120px;
-    border: 1px solid #FF8D72;
-    background-color: #FF8D72;
-    border-radius: 100%;
-}
+ 
 .tabs div img{
     margin: 15px auto;
     padding-top: 10px;
@@ -77,24 +78,15 @@
     padding-left: 7px;
 }
 .tabs p{
-    font-size: 22px;
-    padding-top: 20px;
+    font-size: 16px;
+    padding-top: 5px;
     font-weight: 600;
-    color: #474747;
+    color: #fff;
 }
-.tabs2{
-    padding-top: 60px;
+.tabs2{ 
     text-align: center;
 }
-.tabs2 div{
-    margin: 15px auto;
-    display: block;
-    height: 120px;
-    width: 120px;
-    border: 1px solid #FF8D72;
-    background-color: #FF8D72;
-    border-radius: 100%;
-}
+ 
 .tabs2 div img{
     padding-left: 8px;
     padding-top: 15px;
@@ -104,24 +96,16 @@
     width: 75px;
 }
 .tabs2 p{
-    font-size: 22px;
-    padding-top: 20px;
+    font-size: 16px;
+    padding-top: 5px;
     font-weight: 600;
-    color: #474747;
+    color: #fff;
 }
-.tabs3{
-    padding-top: 60px;
+.tabs3{ 
     text-align: center;
+    padding-right: 0% !important;
 }
-.tabs3 div{
-    margin: 15px auto;
-    display: block;
-    height: 120px;
-    width: 120px;
-    border: 1px solid #FF8D72;
-    background-color: #FF8D72;
-    border-radius: 100%;
-}
+ 
 .tabs3 div img{
     margin: 15px auto;
     padding-top: 15px;
@@ -130,10 +114,10 @@
     width: 55px;
 }
 .tabs3 p{
-    font-size: 22px;
-    padding-top: 20px;
+    font-size: 16px;
+    padding-top: 5px;
     font-weight: 600;
-    color: #474747;
+    color: #fff;
 }
 .create button{
     margin-top: 2%;
@@ -168,8 +152,8 @@ li{
 /* Desktop View */
 @media (max-width: 1399.98px) {
     .hero-text {
-        width: 400px;
-        top: 35%;
+        width: 430px;
+        top: 15%;
     }
 
     .hero-text h1{
@@ -197,8 +181,7 @@ li{
     }
 
     .create h1{
-        font-size: 30px;
-        padding-top: 60px;
+        font-size: 22px; 
     }
 
     .course-image img{

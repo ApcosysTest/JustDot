@@ -9,13 +9,10 @@
 
     <h2 class="head">Create Resume</h2>
     <!-- Image banner -->
-    <div class="hero-image"></div>
-    <figcaption><h3>Create Your Resume With Following Steps</h3></figcaption>
-    
-    <!-- Create my Resume -->
+    {% comment %} <div class="hero-image"></div> {% endcomment %}
+    {% comment %} <figcaption><h3>Create Your Resume With Following Steps</h3></figcaption> {% endcomment %}
     <div class="container">
-        <div class="create">
-            <h1>How it Works?</h1>
+        <div class="create"> 
             <p>A Resume Jusdots Easiest way to Build  <br>a Professional Resume</p>
         </div>
         <div class="container">
@@ -35,22 +32,35 @@
             </div>
         </div>
     </div>
+    <!-- Create my Resume -->
     <div class="container">
-        <div class="row " style="padding-top: 10%; padding-left:15%;">
-            <div class="col-md-6 cards" style="text-align: center;">
-                <a href="#UploadModal" style="text-decoration:none" data-bs-toggle="modal" data-bs-target="#uploadModal">
+        <div class="row " style=" padding-left:15%;">
+            <div class="col-md-3 cards" style="text-align: center;">
+                <a href="{% url 'resumeDetail' %}" style="text-decoration: none; color:#000000"> 
                     <div class="card border-success one"> 
+                        <div class="row ">Recommended
+                        </div>
+                        <img src="{% static 'img/Group 1201.png' %}" alt="">
+                        <div class="card-body">
+                          <p class="card-text">Create a New Resume Will Guide You Through Each Resume Section</p>
+                        </div>
+                    </div>
+                </a> 
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-3 cards"style="text-align: center;">
+                <a href="#UploadModal" style="text-decoration:none" data-bs-toggle="modal" data-bs-target="#uploadModal">
+                    <div class="card two">
                         <div class="row ">
-                            Recommended 
+                            &nbsp;
                         </div>
                         <img src="{% static 'img/Group 1200.png' %}" alt="">
                         <div class="card-body">
                           <p class="card-text">Upload Your Resume Will Move Everything to Your New Resume</p>
-                        </div>
+                        </div> 
                     </div>
                 </a>
-
-                <!-- The Contact Modal -->
+                <!-- The fileUpload Modal -->
                 <div class="modal fade" id="uploadModal" tabindex="-1" role="dialog" aria-labelledby="uploadModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg  modal-dialog-centered" role="document">
                         <div class="modal-content">
@@ -92,22 +102,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 cards"style="text-align: center;">
-                <a href="{% url 'resumeDetail' %}" style="text-decoration: none; color:#000000">
-                    <div class="card two">
-                        <div class="row ">&nbsp;
-                        </div>
-                        <img src="{% static 'img/Group 1201.png' %}" alt="">
-                        <div class="card-body">
-                          <p class="card-text">Create a New Resume Will Guide You Through Each Resume Section</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
+            
         </div>
-    </div>
-
-   
+    </div> 
     
     <script src="{% static 'fileupload/js/dropzone.js' %}"></script>
     <script>

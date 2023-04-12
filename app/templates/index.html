@@ -15,15 +15,15 @@
                 <div class="container">
                     <div class="hero-text">
                         <p>Free Online Resume Maker</p>
-                        <a class="btn" style="background-color: #009EFF;" href="{% url 'createResume' %}">Build My Resume</a>
+                        <a class="btn" style="background-color: #009EFF;" href="{% url 'createResume' %}">Build My Resume</a><br><br>   
+                        <span class="imgtext">
+                            Now, You Don't Need to Spend Hours & Hours Just to Built a Resume. Jusdots Has Made it So Easy That You Can Make a Professional Resume Just in Few Minute With Three Steps.
+                        </span>
                     </div>
                 </div>
             </div>
-        </div>
-        
-    </div>
-    <div class="container">
-        <div class="row">
+        </div>  
+        <div class="row figCap" >
             <div class="col-md-4 tabs">
                 <div><img src="{% static 'img\Group 1298.png' %}" alt="Easy to Create"></div>
                 <p>Easy to Create</p>
@@ -36,31 +36,80 @@
                 <div><img src="{% static 'img\Group 1297.png' %}" alt="More Than 100 Templates"></div>
                 <p>More Than 100 Templates</p>
             </div>
-        </div>
+        </div> 
     </div>
-    <!-- Create my Resume -->
-    <div class="container">
-        <div class="create">
-            <h1>Resume For All Professions</h1>
-            <p>Now, You Don't Need to Spend Hours & Hours Just to Built a Resume. Jusdots Has Made it So Easy That You Can Make a Professional Resume Just in Few Minute With Three Steps.</p>
-            <a href="/createResume" class="btn" style="background-color: #009EFF; color:#ffffff">Create My Resume</a>
-        </div>
-    </div>
+    
 
     <!-- Benifits -->
     <div class="container">
         <div class="create">
             <h1>Benefits of jusdots Resume Builder</h1>
-            <p>
-                <ul style="list-style: none;">
-                    <li>Create a Professional Resume For Every Industry</li>
-                    <li>Present All Yours Skill In a Professional Way</li>
-                    <li>Save & Edit as Many Time You Want</li>
-                    <li>Download For Free</li>
-                </ul>
-            </p>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>
+                        <ul style="list-style: none;">
+                            <li>Create a Professional Resume For Every Industry</li>
+                            <li>Present All Yours Skill In a Professional Way</li> 
+                        </ul> 
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <p>
+                        <ul style="list-style: none;"> 
+                            <li>Download For Free</li> 
+                            <li>Save & Edit as Many Time You Want</li>
+                        </ul> 
+                    </p>
+                </div>
+            </div>  
         </div>
     </div>
     
-    <!-- footer  -->
+    <!--  Resume  Templates-->  
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <a href="{% url 'resumeDetail' %}">
+                    <img width = "95%"src="../static/img/templates/1.png" alt="template1">
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="{% url 'resumeDetail' %}">
+                    <img width = "95%" src="../static/img/templates/2.png" alt="template2">
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="{% url 'resumeDetail' %}">
+                    <img width = "95%" src="../static/img/templates/3.png" alt="template3">
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="{% url 'resumeDetail' %}">
+                    <img width = "95%" src="../static/img/templates/4.png" alt="template4">
+                </a>
+            </div> 
+        </div> 
+        <div class="row">
+            <div class="col-md-3">
+                <a href="{% url 'resumeDetail' %}">
+                    <img width = "95%" src="../static/img/templates/5.png" alt="template5">
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="{% url 'resumeDetail' %}">
+                    <img width = "95%" src="../static/img/templates/6.png" alt="template6">
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="{% url 'resumeDetail' %}">
+                    <img width = "95%" src="../static/img/templates/7.png" alt="template7">
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="{% url 'resumeDetail' %}">
+                    <img width = "95%" src="../static/img/templates/8.png" alt="template8">
+                </a>
+            </div> 
+        </div> 
+    </div>
     {% endblock %}
