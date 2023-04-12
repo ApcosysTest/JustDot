@@ -1,8 +1,7 @@
 .login{
     margin: auto;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    padding: 20px; 
-    margin-top: 10%;
+    padding: 20px 20px 10px 20px;  
     border-radius: 5px;
 }
 
@@ -31,8 +30,34 @@
     padding-left: 20px; 
     padding-right: 20px; 
     padding-top: 20px; 
+} 
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: green;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
 }
-
+.helpertext{
+    font-size: 12px;
+    margin-top: 0% !important;
+    opacity: 0.5;
+    margin: 5px 0px;
+    padding: 0% 5% ;
+} 
+.inputRadio{
+    padding: 4%;
+    position: relative;
+    bottom:-2px;
+    color: green;
+    margin-top: 2px;
+}
 .inputWithIcon .form-control {
     width: 100%;
     border: 1px solid #aaa;
@@ -51,7 +76,7 @@
   
 .inputWithIcon {
     position: relative;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     margin: 5px;
 }
 

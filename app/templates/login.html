@@ -61,8 +61,15 @@
                 </center> 
                 {% csrf_token %}
 
-                {{ login_form }}
-
+                <!-- {{ login_form }} -->
+                <div class="inputWithIcon">
+                    <input type="text" placeholder="E-Mail" name="username" id="id_username">
+                    <span class="material-symbols-outlined">email</span>
+                </div>
+                <div class="inputWithIcon">
+                    <input type="password" placeholder="Password" name="password" id = "id_password">
+                    <span class="material-symbols-outlined">lock</span>
+                </div>
                 <p style="text-align: end; text-decoration: none;"><a href="{% url 'forgotPassword' %}">Forgot Password?</a></p>
                 <button type="submit" class="btn ">Log In</button>
             </form>
