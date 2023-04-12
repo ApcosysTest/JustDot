@@ -45,23 +45,17 @@
                 <center>  
                     <div class="container" >
                     {% if messages %}
-                            <div class ="messages" style="width: 300px;">
-                
+                            <div class ="messages" style="width: 300px;"> 
                         {% for message in messages  %}
                                 <div class="alert alert-danger" role="alert">
-                                    <strong style="color:font-size: 20px;">! {{message}}</strong> 
-                                </div>
-                
-                        {% endfor %}
-                
-                            </div>
-                            
+                                    <strong style="font-size: 18px; padding:0%">! {{message}}</strong> 
+                                </div> 
+                        {% endfor %} 
+                        </div> 
                     {% endif %}
                     </div> 
                 </center> 
-                {% csrf_token %}
-
-                <!-- {{ login_form }} -->
+                {% csrf_token %}  
                 <div class="inputWithIcon">
                     <input type="text" placeholder="E-Mail" name="username" id="id_username">
                     <span class="material-symbols-outlined">email</span>

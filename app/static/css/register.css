@@ -49,9 +49,9 @@ input[type='radio']:checked:after {
     height: 35px;
     outline: 0;
     border-width: 0 0 1px;
-    border-color: #474747;
+    border-color: #d1d1d1;
     width: 100%;
-    padding: 0px 15px;
+    padding: 0px 14px;
 }
 /* Floating label for whole page */
 .body-details .title{
@@ -62,8 +62,7 @@ input[type='radio']:checked:after {
     border-radius: 4px 4px 0px 0px;
 }
 .name .title{
-    width: 100% !important;
-    margin-top: 50px;
+    width: 100% !important; 
     padding: 0;
 }
 .body-details .header{
@@ -114,9 +113,9 @@ input[type='radio']:checked:after {
     position: absolute;
     left: 0;
     top: 2px;
-    padding: 4px 8px;
-    color: #474747;
-    font-size: 28px;
+    padding: 7px 10px;
+    color: #d1d1d1;
+    font-size: 22px;
 }
 
 .login .btn{
@@ -131,16 +130,7 @@ input[type='radio']:checked:after {
     color: white;
     background-color: #009EFF;
 }
-
-input[type="text"],input[type="email"],input[type="phone"], input[type='password'], input[type='number'] {
-    width: 100%;
-    border: 1px solid #aaa;
-    outline: none;
-    padding: 8px;
-    padding-left: 40px;
-    box-sizing: border-box;
-    border-radius: 4px;
-}
+ 
 /* Desktop View */
 @media (max-width: 1399.98px) {
     .login{

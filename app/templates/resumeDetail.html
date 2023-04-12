@@ -15,7 +15,7 @@
                 <div class="radio">
                     <div class="radio-op">
                         <label for="Mr">Mr</label>
-                        <input type="radio" id="Mr" name="title" value="Mr">
+                        <input type="radio" id="Mr" name="title" value="Mr" >
                     </div>
                     <div class="radio-op">
                         <label for="Ms">Ms</label> 
@@ -293,6 +293,28 @@
                 </div>
             </a>
         </div>
+        <div class="agreeNSubmit">
+            <input type="checkbox" name="terms" id="terms" onchange="activateButton(this)">  I hereby Agree to all the T&C and Privacy Policy of Justdots. 
+        </div>
+        <div  style="text-align:center;">
+            <button type="button" disabled class="btn btn-outline-primary agrNSub" id="submit"> 
+                    Generate My Resume 
+            </button>
+        </div>
     </div>
     
+
+    <script>  
+            
+        function activateButton(element) { 
+            if(element.checked) {
+                document.getElementById("submit").disabled = false;
+                console.log('disabled')
+            }
+            else {
+                document.getElementById("submit").disabled = true;
+                console.log('enabled')
+            } 
+        }
+    </script>
 {% endblock %}
